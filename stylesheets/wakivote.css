@@ -79,23 +79,66 @@ body {
   margin-top: 2em;
 }
 /* line 47, ../src/wakivote.sass */
+#main-content h2 {
+  font-weight: bold;
+  width: 600px;
+  padding: 5px 10px;
+  font-size: 110%;
+  color: white;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -o-border-top-left-radius: 10px;
+  -ms-border-top-left-radius: 10px;
+  -khtml-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -o-border-top-right-radius: 10px;
+  -ms-border-top-right-radius: 10px;
+  -khtml-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #666666), color-stop(100%, #333333));
+  background-image: -moz-linear-gradient(top, #666666 0%, #333333 100%);
+  background-image: linear-gradient(top, #666666 0%, #333333 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF6666666, endColorstr=#FF333333);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF666666, endColorstr=#FF333333)";
+}
+/* line 57, ../src/wakivote.sass */
+#main-content .wrapper {
+  width: 598px;
+  padding: 5px 10px;
+  border: 1px solid #333333;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -o-border-bottom-left-radius: 5px;
+  -ms-border-bottom-left-radius: 5px;
+  -khtml-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -o-border-bottom-right-radius: 5px;
+  -ms-border-bottom-right-radius: 5px;
+  -khtml-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* line 62, ../src/wakivote.sass */
 #main-content table {
   margin: 5px;
   border-collapse: collapse;
   table-layout: auto;
   background: #e8e8e8;
-  width: 90%;
+  width: 98%;
 }
-/* line 54, ../src/wakivote.sass */
+/* line 69, ../src/wakivote.sass */
 #main-content table tr.altrow {
   background: #cccccc;
 }
-/* line 56, ../src/wakivote.sass */
+/* line 71, ../src/wakivote.sass */
 #main-content table td, #main-content table th {
   padding: 3px 6px;
   border: 1px solid #666666;
 }
-/* line 59, ../src/wakivote.sass */
+/* line 74, ../src/wakivote.sass */
 #main-content table th {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #cccccc), color-stop(100%, #999999));
   background-image: -moz-linear-gradient(top, #cccccc 0%, #999999 100%);
@@ -103,18 +146,74 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFcccccc, endColorstr=#FF999999);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFcccccc, endColorstr=#FF999999)";
 }
-/* line 63, ../src/wakivote.sass */
+/* line 78, ../src/wakivote.sass */
 #main-content table th.questions {
   width: 40%;
 }
-/* line 65, ../src/wakivote.sass */
+/* line 80, ../src/wakivote.sass */
 #main-content table thead {
   border: 1px solid #666666;
 }
+/* line 82, ../src/wakivote.sass */
+#main-content form {
+  width: 500px;
+  margin: 0 auto;
+}
+/* line 85, ../src/wakivote.sass */
+#main-content form div.input {
+  clear: both;
+}
+/* line 87, ../src/wakivote.sass */
+#main-content form div.input label {
+  padding: 4px 8px;
+  display: block;
+  float: left;
+  width: 200px;
+}
+/* line 92, ../src/wakivote.sass */
+#main-content form div.input input {
+  padding: 3px 6px;
+  width: 150px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #666666;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #999999), color-stop(100%, #cccccc));
+  background-image: -moz-linear-gradient(top, #999999 0%, #cccccc 100%);
+  background-image: linear-gradient(top, #999999 0%, #cccccc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)";
+}
+/* line 100, ../src/wakivote.sass */
+#main-content form div.input textarea {
+  padding: 3px 6px;
+  width: 150px;
+  height: 100px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #666666;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #999999), color-stop(100%, #cccccc));
+  background-image: -moz-linear-gradient(top, #999999 0%, #cccccc 100%);
+  background-image: linear-gradient(top, #999999 0%, #cccccc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)";
+}
 
-/* line 68, ../src/wakivote.sass */
+/* line 110, ../src/wakivote.sass */
+#footer {
+  margin-top: 20px;
+}
+
+/* line 112, ../src/wakivote.sass */
 .button {
-  float: right;
+  text-align: center;
   display: inline-block;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -123,8 +222,9 @@ body {
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 72, ../src/wakivote.sass */
+/* line 116, ../src/wakivote.sass */
 .button a {
+  font-weight: bold;
   text-decoration: none;
   color: #333333;
   display: block;
@@ -142,8 +242,9 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFcccccc, endColorstr=#FF999999);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFcccccc, endColorstr=#FF999999)";
 }
-/* line 82, ../src/wakivote.sass */
+/* line 127, ../src/wakivote.sass */
 .button a:hover {
+  color: white;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #999999), color-stop(100%, #cccccc));
   background-image: -moz-linear-gradient(top, #999999 0%, #cccccc 100%);
   background-image: linear-gradient(top, #999999 0%, #cccccc 100%);

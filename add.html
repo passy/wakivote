@@ -63,45 +63,29 @@
     </div>
 
     <div id="main-content" role="main">
-		<h2>Umfragen-Übersicht</h2>
+		<h2>Neue Umfrage erstellen</h2>
         <div class="wrapper">
-            <table>
-				<thead>
-					<tr>
-						<th class="questions">Fragen</th>
-						<th></th>
-						<th>Restdauer</th>
-						<th>Ergebnis</th>
-					</tr>
-				</thead>
-				<tbody>
-					<?php
-					//foreach bla bla
-					//table with dummy data
-					?>
-					<tr>
-						<td>#Frage 1#</td>
-						<td><a href="#">abstimmen</a></td>
-						<td>#x# Tage</td>
-						<td><a href="#">hier</a></td>
-					</tr>
-					<?php
-					// endforeach;
-					//more dummy date ;)
-					?>
-					<tr class="altrow">
-						<td>#Frage 2#</td>
-						<td><a href="#">abstimmen</a></td>
-						<td>#x# Tage</td>
-						<td><a href="#">hier</a></td>
-					</tr>
-				</tbody>
-			</table>
+			<form action="#">
+				<div class="input">
+					<label for="name">Name der Umfrage</label>
+					<input name="name" />
+				</div>
+				<div class="input">
+					<label for="question">Frage</label>
+					<input name="question" />
+				</div>
+				<div class="input">
+					<label for="answers">Antworten<br/>(Mehrere durch Komma getrennt)</label>
+					<textarea name="answers"></textarea>
+				</div>
+			</form>
+			<br/>
+			<div class="button"><a href="#">Umfrage speichern</a></div>
         </div>
     </div>
 
     <footer id="footer">
-        <a href="#">Startseite</a>
+        <div class="button"><a href="#">Startseite</a></div>
     </footer>
   </div> <!--! end of #container -->
 

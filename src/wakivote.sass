@@ -44,12 +44,27 @@ body
 
 #main-content
   margin-top: 2em
+  h2
+    font-weight: bold
+    width: 600px
+    padding: 5px 10px
+    font-size: 110%
+    color: white
+    +border-top-radius(10px)
+    +linear-gradient(color-stops(#666, #333), top)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF6666666, endColorstr=#FF333333)
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF666666, endColorstr=#FF333333)"
+  .wrapper 
+    width: 598px
+    padding: 5px 10px
+    border: 1px solid #333
+    +border-bottom-radius(5px)
   table
     margin: 5px
     border-collapse: collapse
     table-layout: auto
     background: #e8e8e8
-    width: 90%
+    width: 98%
     tr
       &.altrow
         background: #ccc
@@ -64,12 +79,42 @@ body
         width: 40%
     thead
       border: 1px solid #666
+  form
+    width: 500px
+    margin: 0 auto
+    div.input
+      clear: both
+      label
+        padding: 4px 8px
+        display: block
+        float: left
+        width: 200px
+      input
+        padding: 3px 6px
+        width: 150px
+        +border-radius(3px)
+        border: 1px solid #666
+        +linear-gradient(color-stops(#999, #ccc), top)
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)"
+      textarea
+        padding: 3px 6px
+        width: 150px
+        height: 100px
+        +border-radius(3px)
+        border: 1px solid #666
+        +linear-gradient(color-stops(#999, #ccc), top)
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)"
 
+#footer
+  margin-top: 20px
 .button
-  float: right
+  text-align: center
   display: inline-block
   +border-radius(5px)
   a
+    font-weight: bold
     text-decoration: none
     color: #333
     display: block
@@ -80,6 +125,7 @@ body
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFcccccc, endColorstr=#FF999999)
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFcccccc, endColorstr=#FF999999)"
     &:hover
+      color: white
       +linear-gradient(color-stops(#999, #ccc), top)
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)
       -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)"

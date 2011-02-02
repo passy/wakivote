@@ -49,21 +49,7 @@ body
 
 #main-content
   margin-top: 2em
-  h2
-    font-weight: bold
-    width: 600px
-    padding: 5px 10px
-    font-size: 110%
-    color: white
-    +border-top-radius(10px)
-    +linear-gradient(color-stops(#666, #333), top)
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF6666666, endColorstr=#FF333333)
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF666666, endColorstr=#FF333333)"
-  .wrapper 
-    width: 598px
-    padding: 5px 10px
-    border: 1px solid #333
-    +border-bottom-radius(5px)
+
   table
     margin: 5px 0
     border-collapse: collapse
@@ -84,11 +70,11 @@ body
         width: 40%
     thead
       border: 1px solid #666
+
   form
-    width: 500px
-    margin: 0 auto
     div.input
       clear: both
+
       label
         padding: 4px 8px
         display: block
@@ -141,7 +127,8 @@ button
   color: #333
   border: 1px solid #666
   padding: 4px 6px
-  cursor: pointer
+  // Normale Buttons haben keinen Pointer
+  // cursor: pointer
   float: right
   font-weight: bold
 
@@ -154,30 +141,30 @@ button
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)"
 
-.vote-box
+.content-box
   +topline-border
   border: 1px solid $BORDER_COLOR_DARK
   background: $BG_COLOR_LIGHT
   overflow: hidden
 
-  // To center the voting box, enable those lines:
-    width: 70%
-    margin: 0 auto
-
-  header
+  header,h2
     +stdheader
     // Fallback color
     background: $BORDER_COLOR_DARK
     +linear-gradient(color-stops($BORDER_COLOR_DARK, darken($BORDER_COLOR_DARK, 10%)), top)
+    margin-bottom: 1em
+
+  button
+    margin: 0.5em
+
+.vote-box
+  @extend .content-box
 
   ul
     margin: 1em
 
   li
     margin-bottom: 0.5em
-
-  button
-    margin: 0.5em
 
 
 =bar-color($color)

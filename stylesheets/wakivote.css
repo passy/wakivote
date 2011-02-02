@@ -87,7 +87,7 @@ body {
   width: 100%;
 }
 /* line 54, ../src/wakivote.sass */
-#main-content table tr.altrow {
+#main-content table tr:nth-child(2n) {
   background: #cccccc;
 }
 /* line 56, ../src/wakivote.sass */

@@ -179,14 +179,75 @@ button
   button
     margin: 0.5em
 
+
+=bar-color($color)
+  .bar
+    border: 2px solid $color
+    background: $color
+    +linear-gradient(color-stops(lighten($color, 33%), $color))
+
+.result-box
+  @extend .vote-box
+
+  ul
+    display: inline
+    overflow: hidden
+    li
+      margin: 0 0.5em
+      display: block
+      float: left
+      width: 70px
+      height: 400px
+      position: relative
+
+      span
+        display: inline-block
+        padding: 0.3em
+        border: 1px solid $MESSAGE_COLOR_INFO
+        background: $MESSAGE_COLOR_INFO
+        +linear-gradient(color-stops(lighten($MESSAGE_COLOR_INFO, 25%), $MESSAGE_COLOR_INFO), top)
+
+        position: absolute
+        bottom: 10px
+
+      .bar
+        +box-shadow($BORDER_COLOR, 0, 0, 10px)
+        min-height: 1px
+        width: 50px
+        margin-left: ((70px - 50px - 4px) / 2)
+
+        position: absolute
+        bottom: 75px
+
+      // Bar colors based on http://www.colourlovers.com/palette/1439942/Summer_breeze
+      +bar-color(#79AFCC)
+
+      &:nth-child(2n)
+        +bar-color(#7E8DBD)
+
+      &:nth-child(3n)
+        +bar-color(#FFE768)
+
+      &:nth-child(4n)
+        +bar-color(#FFAB59)
+
+
 .message
   +border-radius(3px)
   +box-shadow($BORDER_COLOR, 2px, 2px, 3px)
 
+  clear: both
   border: 1px solid $BORDER_COLOR
-  margin-bottom: 0.5em
+  padding: 0.2em
+  margin: 0.5em 0
   width: auto
   text-align: center
 
   &.info
     background-color: $MESSAGE_COLOR_INFO
+
+  &.result
+    border-color: $MESSAGE_COLOR_RESULT
+    font-size: 110%
+    background: $MESSAGE_COLOR_RESULT
+    +linear-gradient(color-stops(lighten($MESSAGE_COLOR_RESULT, 25%), $MESSAGE_COLOR_RESULT), top)

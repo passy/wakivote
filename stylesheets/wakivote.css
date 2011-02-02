@@ -281,8 +281,13 @@ button:hover {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)";
 }
 
+<<<<<<< HEAD
 /* line 157, ../src/wakivote.sass */
 .vote-box {
+=======
+/* line 108, ../src/wakivote.sass */
+.vote-box, .result-box {
+>>>>>>> Results page
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   -o-border-radius: 8px;
@@ -305,8 +310,13 @@ button:hover {
   background: #dddddd;
   overflow: hidden;
 }
+<<<<<<< HEAD
 /* line 167, ../src/wakivote.sass */
 .vote-box header {
+=======
+/* line 118, ../src/wakivote.sass */
+.vote-box header, .result-box header {
+>>>>>>> Results page
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   -o-border-radius: 8px;
@@ -336,6 +346,7 @@ button:hover {
   background-image: -moz-linear-gradient(top, #333333 0%, #1a1a1a 100%);
   background-image: linear-gradient(top, #333333 0%, #1a1a1a 100%);
 }
+<<<<<<< HEAD
 /* line 173, ../src/wakivote.sass */
 .vote-box ul {
   margin: 1em;
@@ -350,6 +361,93 @@ button:hover {
 }
 
 /* line 182, ../src/wakivote.sass */
+=======
+/* line 124, ../src/wakivote.sass */
+.vote-box ul, .result-box ul {
+  margin: 1em;
+}
+/* line 127, ../src/wakivote.sass */
+.vote-box li, .result-box li {
+  margin-bottom: 0.5em;
+}
+/* line 130, ../src/wakivote.sass */
+.vote-box button, .result-box button {
+  margin: 0.5em;
+}
+
+/* line 143, ../src/wakivote.sass */
+.result-box ul {
+  display: inline;
+  overflow: hidden;
+}
+/* line 146, ../src/wakivote.sass */
+.result-box ul li {
+  margin: 0 0.5em;
+  display: block;
+  float: left;
+  width: 70px;
+  height: 400px;
+  position: relative;
+}
+/* line 154, ../src/wakivote.sass */
+.result-box ul li span {
+  display: inline-block;
+  padding: 0.3em;
+  border: 1px solid #67ab9f;
+  background: #67ab9f;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #b9d8d3), color-stop(100%, #67ab9f));
+  background-image: -moz-linear-gradient(top, #b9d8d3 0%, #67ab9f 100%);
+  background-image: linear-gradient(top, #b9d8d3 0%, #67ab9f 100%);
+  position: absolute;
+  bottom: 10px;
+}
+/* line 164, ../src/wakivote.sass */
+.result-box ul li .bar {
+  -moz-box-shadow: #aaaaaa 0 0 10px 0;
+  -webkit-box-shadow: #aaaaaa 0 0 10px 0;
+  -o-box-shadow: #aaaaaa 0 0 10px 0;
+  box-shadow: #aaaaaa 0 0 10px 0;
+  min-height: 1px;
+  width: 50px;
+  margin-left: 8px;
+  position: absolute;
+  bottom: 75px;
+}
+/* line 135, ../src/wakivote.sass */
+.result-box ul li .bar {
+  border: 2px solid #79afcc;
+  background: #79afcc;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #f3f8fa), color-stop(100%, #79afcc));
+  background-image: -moz-linear-gradient(top, #f3f8fa 0%, #79afcc 100%);
+  background-image: linear-gradient(top, #f3f8fa 0%, #79afcc 100%);
+}
+/* line 135, ../src/wakivote.sass */
+.result-box ul li:nth-child(2n) .bar {
+  border: 2px solid #7e8dbd;
+  background: #7e8dbd;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #edeff6), color-stop(100%, #7e8dbd));
+  background-image: -moz-linear-gradient(top, #edeff6 0%, #7e8dbd 100%);
+  background-image: linear-gradient(top, #edeff6 0%, #7e8dbd 100%);
+}
+/* line 135, ../src/wakivote.sass */
+.result-box ul li:nth-child(3n) .bar {
+  border: 2px solid #ffe768;
+  background: #ffe768;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffe768));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ffe768 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ffe768 100%);
+}
+/* line 135, ../src/wakivote.sass */
+.result-box ul li:nth-child(4n) .bar {
+  border: 2px solid #ffab59;
+  background: #ffab59;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffab59));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ffab59 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ffab59 100%);
+}
+
+/* line 186, ../src/wakivote.sass */
+>>>>>>> Results page
 .message {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -361,12 +459,27 @@ button:hover {
   -webkit-box-shadow: #aaaaaa 2px 2px 3px 0;
   -o-box-shadow: #aaaaaa 2px 2px 3px 0;
   box-shadow: #aaaaaa 2px 2px 3px 0;
+  clear: both;
   border: 1px solid #aaaaaa;
-  margin-bottom: 0.5em;
+  padding: 0.2em;
+  margin: 0.5em 0;
   width: auto;
   text-align: center;
 }
+<<<<<<< HEAD
 /* line 191, ../src/wakivote.sass */
+=======
+/* line 197, ../src/wakivote.sass */
+>>>>>>> Results page
 .message.info {
   background-color: #67ab9f;
+}
+/* line 200, ../src/wakivote.sass */
+.message.result {
+  border-color: #d67eaa;
+  font-size: 110%;
+  background: #d67eaa;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #f5dfea), color-stop(100%, #d67eaa));
+  background-image: -moz-linear-gradient(top, #f5dfea 0%, #d67eaa 100%);
+  background-image: linear-gradient(top, #f5dfea 0%, #d67eaa 100%);
 }

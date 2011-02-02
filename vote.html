@@ -11,7 +11,7 @@
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Wakivote Base Template</title>
+  <title>Wakivote Voting Template</title>
   <meta name="description" content="Wakivote Base Template">
   <meta name="author" content="Wakivote UI Team">
 
@@ -63,42 +63,22 @@
     </div>
 
     <div id="main-content" role="main">
-		<h2>Umfragen-Übersicht</h2>
         <div class="wrapper">
-            <table>
-				<thead>
-					<tr>
-						<th class="questions">Fragen</th>
-						<th></th>
-						<th>Restdauer</th>
-						<th>Ergebnis</th>
-					</tr>
-				</thead>
-				<tbody>
-					<?php
-					//foreach bla bla
-					//table with dummy data
-					?>
-					<tr>
-						<td>#Frage 1#</td>
-						<td><a href="#">abstimmen</a></td>
-						<td>#x# Tage</td>
-						<td><a href="#">hier</a></td>
-					</tr>
-					<tr>
-						<td>#Frage 2#</td>
-						<td><a href="#">abstimmen</a></td>
-						<td>#x# Tage</td>
-						<td><a href="#">hier</a></td>
-					</tr>
-					<tr>
-						<td>#Frage 3#</td>
-						<td><a href="#">abstimmen</a></td>
-						<td>#x# Tage</td>
-						<td><a href="#">hier</a></td>
-					</tr>
-				</tbody>
-			</table>
+            <div class="message info">Die Umfrage ist noch x Tage offen.</div>
+            <div class="vote-box">
+                <form action="#" method="post">
+                    <header>Fragestellung</header>
+                    <ul>
+                        <li><input type="radio" name="answer"
+                        id="wakivote-answer-1"><label for="wakivote-answer-1">Antwort 1</label></li>
+                        <li><input type="radio" name="answer"
+                        id="wakivote-answer-2"><label for="wakivote-answer-2">Antwort 2</label></li>
+                        <li><input type="radio" name="answer"
+                        id="wakivote-answer-3"><label for="wakivote-answer-3">Antwort 3</label></li>
+                    </ul>
+                    <button>Vote</button>
+                </form>
+            </div>
         </div>
     </div>
 

@@ -1,0 +1,80 @@
+/* line 6, ../src/wakivote.sass */
+body {
+  font: 13px/1.231 sans-serif;
+}
+
+/* line 10, ../src/wakivote.sass */
+#header .wrapper {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #aaaaaa;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding: 3em;
+}
+
+/* line 27, ../src/wakivote.sass */
+#sidebar .sidebar-block {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -o-border-bottom-left-radius: 0;
+  -ms-border-bottom-left-radius: 0;
+  -khtml-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -o-border-bottom-right-radius: 0;
+  -ms-border-bottom-right-radius: 0;
+  -khtml-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid #aaaaaa;
+  margin-bottom: 1em;
+}
+/* line 31, ../src/wakivote.sass */
+#sidebar .sidebar-block header {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -o-border-bottom-left-radius: 0;
+  -ms-border-bottom-left-radius: 0;
+  -khtml-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -o-border-bottom-right-radius: 0;
+  -ms-border-bottom-right-radius: 0;
+  -khtml-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid #aaaaaa;
+  border: none;
+  background-color: #aaaaaa;
+  color: white;
+  text-transform: uppercase;
+  font-size: 105%;
+  margin-top: -1px;
+  padding: 5px;
+}
+/* line 41, ../src/wakivote.sass */
+#sidebar .sidebar-block nav {
+  padding: 0.5em;
+}
+
+/* line 44, ../src/wakivote.sass */
+#main-content {
+  margin-top: 2em;
+}

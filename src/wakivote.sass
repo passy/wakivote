@@ -1,0 +1,45 @@
+@import constants
+@import compass/css3/border-radius
+
+// font normalization inspired by  from the YUI Library's fonts.css: developer.yahoo.com/yui/
+
+body
+  font: 13px/1.231 sans-serif
+
+#header
+  .wrapper
+    +border-radius(3px)
+
+    border: 1px solid $BORDER_COLOR
+    margin:
+      top: 1em
+      bottom: 2em
+    padding: 3em
+
+=sidebar-border
+  +border-radius(8px)
+  +border-corner-radius(bottom, left, 0)
+  +border-corner-radius(bottom, right, 0)
+  border: 1px solid $BORDER_COLOR
+
+
+#sidebar
+  .sidebar-block
+    +sidebar-border
+    margin-bottom: 1em
+
+    header
+      +sidebar-border
+      border: none
+      background-color: $BORDER_COLOR
+      color: #fff
+      text-transform: uppercase
+      font-size: 105%
+      margin-top: -1px
+      padding: 5px
+
+    nav
+      padding: 0.5em
+
+#main-content
+  margin-top: 2em

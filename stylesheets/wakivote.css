@@ -80,11 +80,11 @@ body {
 }
 /* line 47, ../src/wakivote.sass */
 #main-content table {
-  margin: 5px;
+  margin: 5px 0;
   border-collapse: collapse;
   table-layout: auto;
   background: #e8e8e8;
-  width: 90%;
+  width: 100%;
 }
 /* line 54, ../src/wakivote.sass */
 #main-content table tr.altrow {

@@ -140,7 +140,8 @@ button
   +linear-gradient(color-stops(#ccc, #999), top)
   color: #333
   border: 1px solid #666
-  padding: 2px 4px
+  padding: 4px 6px
+  cursor: pointer
   float: right
   font-weight: bold
 
@@ -148,6 +149,7 @@ button
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFcccccc, endColorstr=#FF999999)"
 
   &:hover
+    color: white
     +linear-gradient(color-stops(#999, #ccc), top)
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)"

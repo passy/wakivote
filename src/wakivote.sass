@@ -1,6 +1,7 @@
 @import constants
 @import compass/css3/border-radius
 @import compass/css3/gradient
+@import compass/css3/box-shadow
 
 // font normalization inspired by  from the YUI Library's fonts.css: developer.yahoo.com/yui/
 
@@ -17,27 +18,31 @@ body
       bottom: 2em
     padding: 3em
 
-=sidebar-border
+=topline-border
   +border-radius(8px)
   +border-corner-radius(bottom, left, 0)
   +border-corner-radius(bottom, right, 0)
-  border: 1px solid $BORDER_COLOR
+
+=stdheader
+  +topline-border
+  border: none
+  color: #fff
+  text-transform: uppercase
+  font-size: 105%
+  margin-top: -1px
+  padding: 5px
+
 
 
 #sidebar
   .sidebar-block
-    +sidebar-border
+    +topline-border
     margin-bottom: 1em
+    border: 1px solid $BORDER_COLOR
 
     header
-      +sidebar-border
-      border: none
+      +stdheader
       background-color: $BORDER_COLOR
-      color: #fff
-      text-transform: uppercase
-      font-size: 105%
-      margin-top: -1px
-      padding: 5px
 
     nav
       padding: 0.5em
@@ -99,3 +104,40 @@ button
     +linear-gradient(color-stops(#999, #ccc), top)
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)"
+
+.vote-box
+  +topline-border
+  border: 1px solid $BORDER_COLOR_DARK
+  background: $BG_COLOR_LIGHT
+  overflow: hidden
+
+  // To center the voting box, enable those lines:
+    width: 70%
+    margin: 0 auto
+
+  header
+    +stdheader
+    // Fallback color
+    background: $BORDER_COLOR_DARK
+    +linear-gradient(color-stops($BORDER_COLOR_DARK, darken($BORDER_COLOR_DARK, 10%)), top)
+
+  ul
+    margin: 1em
+
+  li
+    margin-bottom: 0.5em
+
+  button
+    margin: 0.5em
+
+.message
+  +border-radius(3px)
+  +box-shadow($BORDER_COLOR, 2px, 2px, 3px)
+
+  border: 1px solid $BORDER_COLOR
+  margin-bottom: 0.5em
+  width: auto
+  text-align: center
+
+  &.info
+    background-color: $MESSAGE_COLOR_INFO

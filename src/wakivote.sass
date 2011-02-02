@@ -83,3 +83,19 @@ body
       +linear-gradient(color-stops(#999, #ccc), top)
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)
       -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)"
+
+button
+  +border-radius(5px)
+  +linear-gradient(color-stops(#ccc, #999), top)
+  color: #333
+  border: 1px solid #666
+  padding: 2px 4px
+  float: right
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFcccccc, endColorstr=#FF999999)
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFcccccc, endColorstr=#FF999999)"
+
+  &:hover
+    +linear-gradient(color-stops(#999, #ccc), top)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)"

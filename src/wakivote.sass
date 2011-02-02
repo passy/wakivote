@@ -1,5 +1,6 @@
 @import constants
 @import compass/css3/border-radius
+@import compass/css3/gradient
 
 // font normalization inspired by  from the YUI Library's fonts.css: developer.yahoo.com/yui/
 
@@ -43,3 +44,43 @@ body
 
 #main-content
   margin-top: 2em
+  table
+    margin: 5px
+    border-collapse: collapse
+    table-layout: auto
+    background: #e8e8e8
+    width: 90%
+    tr
+      &.altrow
+        background: #ccc
+    td, th
+      padding: 3px 6px
+      border: 1px solid #666
+    th
+      +linear-gradient(color-stops(#ccc, #999), top)
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFcccccc, endColorstr=#FF999999)
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFcccccc, endColorstr=#FF999999)"
+      &.questions
+        width: 40%
+    thead
+      border: 1px solid #666
+
+.button
+  float: right
+  display: inline-block
+  +border-radius(5px)
+  a
+    text-decoration: none
+    color: #333
+    display: block
+    +border-radius(5px)
+    border: 1px solid #666
+    padding: 4px 8px
+    +linear-gradient(color-stops(#ccc, #999), top)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFcccccc, endColorstr=#FF999999)
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFcccccc, endColorstr=#FF999999)"
+    &:hover
+      +linear-gradient(color-stops(#999, #ccc), top)
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF999999, endColorstr=#FFcccccc)"
+

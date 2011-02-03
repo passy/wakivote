@@ -62,7 +62,16 @@ a img {
   border: none;
 }
 
-/* line 10, ../src/grid.sass */
+/* line 108, ../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  display: block;
+}
+
+/* line 12, ../src/grid.sass */
 .container_12 {
   margin-left: auto;
   margin-right: auto;
@@ -321,7 +330,7 @@ a img {
   left: -960px;
 }
 
-/* line 13, ../src/grid.sass */
+/* line 15, ../src/grid.sass */
 .container_16 {
   margin-left: auto;
   margin-right: auto;
@@ -660,13 +669,13 @@ a img {
   left: -960px;
 }
 
-/* line 20, ../src/grid.sass */
+/* line 22, ../src/grid.sass */
 body {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
-/* line 22, ../src/grid.sass */
+/* line 24, ../src/grid.sass */
 body #header,
 body #footer,
 body #sidebar,
@@ -676,16 +685,16 @@ body #main-content {
   margin-left: 10px;
   margin-right: 10px;
 }
-/* line 27, ../src/grid.sass */
+/* line 29, ../src/grid.sass */
 body #header, body #footer {
   padding-left: 320px;
   width: 620px;
 }
-/* line 30, ../src/grid.sass */
+/* line 32, ../src/grid.sass */
 body #sidebar {
   width: 300px;
 }
-/* line 32, ../src/grid.sass */
+/* line 34, ../src/grid.sass */
 body #main-content {
   width: 620px;
 }

@@ -306,16 +306,17 @@ button:hover {
   display: inline;
   overflow: hidden;
 }
-/* line 181, ../src/wakivote.sass */
+/* line 182, ../src/wakivote.sass */
 .result-box ul li {
   margin: 0 0.5em;
   display: block;
   float: left;
   width: 70px;
-  height: 400px;
+  height: 300px;
+  margin-top: 100px;
   position: relative;
 }
-/* line 189, ../src/wakivote.sass */
+/* line 191, ../src/wakivote.sass */
 .result-box ul li span {
   display: inline-block;
   padding: 0.3em;
@@ -327,7 +328,7 @@ button:hover {
   position: absolute;
   bottom: 10px;
 }
-/* line 199, ../src/wakivote.sass */
+/* line 201, ../src/wakivote.sass */
 .result-box ul li .bar {
   -moz-box-shadow: #aaaaaa 0 0 10px 0;
   -webkit-box-shadow: #aaaaaa 0 0 10px 0;
@@ -335,7 +336,6 @@ button:hover {
   box-shadow: #aaaaaa 0 0 10px 0;
   min-height: 1px;
   width: 50px;
-  margin-top: 20px;
   margin-left: 8px;
   position: absolute;
   bottom: 75px;
@@ -375,7 +375,7 @@ button:hover {
   background-image: linear-gradient(top, #ffffff 0%, #ffab59 100%);
 }
 
-/* line 224, ../src/wakivote.sass */
+/* line 225, ../src/wakivote.sass */
 .message {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -394,11 +394,11 @@ button:hover {
   width: auto;
   text-align: center;
 }
-/* line 235, ../src/wakivote.sass */
+/* line 236, ../src/wakivote.sass */
 .message.info {
   background-color: #67ab9f;
 }
-/* line 238, ../src/wakivote.sass */
+/* line 239, ../src/wakivote.sass */
 .message.result {
   border-color: #d67eaa;
   font-size: 110%;

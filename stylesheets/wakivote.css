@@ -335,9 +335,12 @@ button:hover {
   box-shadow: #aaaaaa 0 0 10px 0;
   min-height: 1px;
   width: 50px;
+  margin-top: 20px;
   margin-left: 8px;
   position: absolute;
   bottom: 75px;
+  padding-top: 10%;
+  text-align: center;
 }
 /* line 170, ../src/wakivote.sass */
 .result-box ul li .bar {
@@ -372,7 +375,7 @@ button:hover {
   background-image: linear-gradient(top, #ffffff 0%, #ffab59 100%);
 }
 
-/* line 221, ../src/wakivote.sass */
+/* line 224, ../src/wakivote.sass */
 .message {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -391,11 +394,11 @@ button:hover {
   width: auto;
   text-align: center;
 }
-/* line 232, ../src/wakivote.sass */
+/* line 235, ../src/wakivote.sass */
 .message.info {
   background-color: #67ab9f;
 }
-/* line 235, ../src/wakivote.sass */
+/* line 238, ../src/wakivote.sass */
 .message.result {
   border-color: #d67eaa;
   font-size: 110%;

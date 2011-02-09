@@ -62,22 +62,35 @@
         </section>
     </div>
 
-    <div id="main-content" role="main">
+    <div id="main-content" class="add-vote" role="main">
         <div class="wrapper">
         <div class="content-box">
             <h2>Neue Umfrage erstellen</h2>
             <form action="#">
                 <div class="input">
                     <label for="name">Name der Umfrage</label>
-                    <input name="name" />
+                    <input name="name">
                 </div>
                 <div class="input">
                     <label for="question">Frage</label>
-                    <input name="question" />
+                    <input name="question">
+                </div>
+
+                <div class="input">
+                    <label for="answer1">Antwort1</label>
+                    <input name="answer1">
                 </div>
                 <div class="input">
-                    <label for="answers">Antworten<br/>(Mehrere durch Komma getrennt)</label>
-                    <textarea name="answers"></textarea>
+                    <label for="answer2">Antwort2</label>
+                    <input name="answer2">
+                </div>
+                <div class="input">
+                    <label for="answer3">Antwort3</label>
+                    <input name="answer3">
+                </div>
+                <div class="add-delete">
+                     <a href="#" class="delete-answer">--</a>
+                     <a href="#" class="add-answer">++</a>
                 </div>
             </form>
             <button>Umfrage speichern</div>
